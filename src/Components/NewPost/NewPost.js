@@ -40,28 +40,58 @@ class NewPost extends React.Component {
       <div className="newpost">
         {redirect}
         <h2>Add post</h2>
-        <label>Title</label>
-        <input
-          type="text"
-          value={this.state.title}
-          onChange={(events) => this.setState({ title: events.target.value })}
-        ></input>
+        <form className="form">
+          <div className="row">
+            <div className="col-25">
+              <label>Title</label>
+            </div>
+            <div className="col-75">
+              <input
+                className="input"
+                type="text"
+                value={this.state.title}
+                onChange={(events) =>
+                  this.setState({ title: events.target.value })
+                }
+              />
+            </div>
+          </div>
 
-        <label>Context</label>
-        <input
-          rows="4"
-          value={this.state.context}
-          onChange={(events) => this.setState({ context: events.target.value })}
-        ></input>
-
-        <label>Author</label>
-        <input
-          type="text"
-          value={this.state.author}
-          onChange={(events) => this.setState({ author: events.target.value })}
-        ></input>
-
-        <button onClick={this.postDataHandler}>add post</button>
+          <div className="row">
+            <div className="col-25">
+              <label>Context</label>
+            </div>
+            <div className="col-75">
+              <textarea
+                className="input"
+                value={this.state.context}
+                onChange={(events) =>
+                  this.setState({ context: events.target.value })
+                }
+              />
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-25">
+              <label>Author</label>
+            </div>
+            <div className="col-75">
+              <input
+                className="input"
+                type="text"
+                value={this.state.author}
+                onChange={(events) =>
+                  this.setState({ author: events.target.value })
+                }
+              />
+            </div>
+          </div>
+          <div className="button-div">
+            <button className="button" onClick={this.postDataHandler}>
+              add post
+            </button>
+          </div>
+        </form>
       </div>
     );
   }

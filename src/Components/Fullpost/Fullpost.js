@@ -46,10 +46,12 @@ class Fullpost extends React.Component {
     if (this.state.LoadedPost) {
       post = (
         <div className="fullpost">
-          <h2>{this.state.LoadedPost.title}</h2>
+          <h3>{this.state.LoadedPost.title}</h3>
           <p>{this.state.LoadedPost.body}</p>
           <div className="delete">
-            <button onClick={this.deletePostHandler}>delete</button>
+            <button className="delete-button" onClick={this.deletePostHandler}>
+              Delete
+            </button>
           </div>
         </div>
       );

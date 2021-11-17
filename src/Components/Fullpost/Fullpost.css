@@ -1,9 +1,15 @@
 .fullpost {
-  background-color: coral;
-  width: 80%;
-  height: 30%;
-  margin: 5px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: rgba(138, 235, 241, 0.3);
+  width: 90%;
+  height: 500px;
+  margin-left: 50px;
+  margin-top: 40px;
   padding: auto;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   align-items: center;
   text-align: center;
 }
@@ -11,4 +17,11 @@
 .delete {
   color: darkblue;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.delete-button {
+  width: 100px;
+  border-radius: 7px;
+  color: red;
 }

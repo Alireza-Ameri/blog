@@ -1,4 +1,7 @@
 .post {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   background-color: #a9b3cc;
   border: 1px solid black;
   border-radius: 10px;
