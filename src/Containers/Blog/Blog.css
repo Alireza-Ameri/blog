@@ -1,0 +1,17 @@
+
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: blue;
+}
+
+
+
+.blog-post {
+  margin: 5px 5px;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+.fullpost {
+  background-color: coral;
+  width: 80%;
+  height: 30%;
+  margin: 5px 10px;
+  padding: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.delete {
+  color: darkblue;
+  font-weight: bold;
+}
